@@ -159,6 +159,8 @@ func init() {
 	//
 	// This does not appear to have a significant performance hit.
 	DefaultOptions.Options.MaxTableSize = 16 << 20
+
+	DefaultOptions.Options.Compression = options.ZSTD
 }
 
 var _ ds.Datastore = (*Datastore)(nil)
