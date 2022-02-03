@@ -161,6 +161,8 @@ func init() {
 	DefaultOptions.Options.MaxTableSize = 16 << 20
 
 	DefaultOptions.Options.Compression = options.ZSTD
+	
+	DefaultOptions.Options.MaxBfCacheSize = 0
 }
 
 var _ ds.Datastore = (*Datastore)(nil)
